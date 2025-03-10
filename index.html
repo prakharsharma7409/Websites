@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electro Tech Connect (ETC) - Electronics & AI Innovation Club</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00f0ff;
+            --secondary-color: #ff6b6b;
+        }
+        body {
+            background: 
+                linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%),
+                radial-gradient(circle at top right, rgba(0,240,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at bottom left, rgba(255,107,107,0.1) 0%, transparent 50%);
+            background-blend-mode: overlay;
+            background-attachment: fixed;
+        }
+        .circuit-overlay {
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                repeating-linear-gradient(transparent 0%, transparent 4%, rgba(0,240,255,0.05) 4%, rgba(0,240,255,0.05) 8%),
+                repeating-linear-gradient(90deg, transparent 0%, transparent 4%, rgba(0,240,255,0.05) 4%, rgba(0,240,255,0.05) 8%);
+        }
+        .tech-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,240,255,0.2);
+        }
+        .glowing-border {
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-image-slice: 1;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <div class="container mx-auto px-4 py-8 circuit-overlay">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <!-- Logo Section -->
+        <div class="text-center mb-8">
+            <img src="assets/images/logo.jpg" alt="Electro Tech Connect Logo" class="mx-auto w-1/3 rounded-lg" style="width: 100px; height: 100px; object-fit: cover;">
+        </div>
+
+            <h1 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-4">
+                Electro Tech Connect (ETC)
+            </h1>
+            <p class="text-xl text-blue-200 max-w-2xl mx-auto">
+                Electronics And Communication Engineering
+            </p>
+        </header>
+
+        <!-- Club Focus Areas -->
+        <section class="mb-12">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-2xl tech-card">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-4">
+                        <i class="fas fa-microchip mr-3"></i>Electronics Design
+                    </h3>
+                    <p>Pioneering cutting-edge electronic circuit design, PCB prototyping, and embedded systems development.</p>
+                </div>
+                <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-2xl tech-card">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-4">
+                        <i class="fas fa-robot mr-3"></i>AI & Machine Learning
+                    </h3>
+                    <p>Developing intelligent systems, neural networks, and exploring machine learning applications in electronics.</p>
+                </div>
+                <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-2xl tech-card">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-4">
+                        <i class="fas fa-satellite mr-3"></i>IoT & Robotics
+                    </h3>
+                    <p>Creating innovative Internet of Things (IoT) solutions and advanced robotic systems with smart sensor integration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Club Leadership Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-2xl glowing-border">
+                <h2 class="text-3xl font-semibold text-blue-400 mb-6">
+                    <i class="fas fa-user-tie mr-3"></i>Faculty Coordinators
+                </h2>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-chevron-right text-blue-300 mr-3"></i>
+                        Dr. Anurag Garg (HOD ECE)
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-chevron-right text-blue-300 mr-3"></i>
+                        Dr. Deepak Jhanwar
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-chevron-right text-blue-300 mr-3"></i>
+                        Dr. Lalit Kumar Dausad
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-chevron-right text-blue-300 mr-3"></i>
+                        Sh. Harish Sharma
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-2xl glowing-border">
+                <h2 class="text-3xl font-semibold text-blue-400 mb-6">
+                    <i class="fas fa-users mr-3"></i>Club Leadership
+                </h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="font-bold text-blue-300">
+                            <i class="fas fa-crown mr-2"></i>President
+                        </h3>
+                        <p>Chinmay Vyas (3rd year)</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-blue-300">
+                            <i class="fas fa-file-invoice-dollar mr-2"></i>Secretary & Treasurer
+                        </h3>
+                        <p>Arpita Sharma (2nd year)</p>
+                        <p>Kumkum Raj (2nd year)</p>
+                        <p>Sushil Kumar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Additional Team Sections -->
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-2xl tech-card">
+                <h2 class="text-2xl font-semibold text-blue-400 mb-4">
+                    <i class="fas fa-tasks mr-3"></i>Club Coordinators
+                </h2>
+                <ul class="space-y-2">
+                    <li>• Ritika Arora (3rd year)</li>
+                    <li>• Kushagra (3rd year)</li>
+                    <li>• Prakhar Sharma (2nd year)</li>
+                    <li>• Harshvardhan Salvi (2nd year)</li>
+                    <li>• Samagra Vaidya (2nd year)</li>
+                    <li>• Rishita (2nd year)</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-2xl tech-card">
+                <h2 class="text-2xl font-semibold text-blue-400 mb-4">
+                    <i class="fas fa-box-open mr-3"></i>Inventory Managers
+                </h2>
+                <ul class="space-y-2">
+                    <li>• Vidhi Jangid (2nd year)</li>
+                    <li>• Abeer Sain (2nd year)</li>
+                    <li>• Prakhar Sharma (2nd year)</li>
+                    <li>• Mayank Kansara (2nd year)</li>
+                    <li>• Kashish Motiyani (2nd year)</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-2xl tech-card">
+                <h2 class="text-2xl font-semibold text-blue-400 mb-4">
+                    <i class="fas fa-chess-knights mr-3"></i>Executive Members
+                </h2>
+                <ul class="space-y-2">
+                    <li>• Garima (3rd year)</li>
+                    <li>• Dhruvika Tak (3rd year)</li>
+                    <li>• Priyanka Tak (3rd year)</li>
+                    <li>• Lakshya Mehra (3rd year)</li>
+                    <li>• Hardik Kharodiwal (3rd year)</li>
+                    <li>• Jayesh Sharma (2nd year)</li>
+                    <li>• Jaswant Singh (2nd year)</li>
+                    <li>• Naman Gupta (2nd year)</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- Images Section -->
+        <section class="mt-12">
+            <h2 class="text-center text-4xl font-bold text-blue-400 mb-8">Recent Event</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <img src="assets/images/image1.jpg" alt="Image 1" class="rounded-lg shadow-lg">
+                <img src="assets/images/image2.jpg" alt="Image 2" class="rounded-lg shadow-lg">
+                <img src="assets/images/image4.jpg" alt="Image 4" class="rounded-lg shadow-lg">
+                <img src="assets/images/image8.jpeg" alt="Image 8" class="rounded-lg shadow-lg">
+                <img src="assets/images/image5.jpg" alt="Image 5" class="rounded-lg shadow-lg">
+                <img src="assets/images/image6.jpg" alt="Image 6" class="rounded-lg shadow-lg">
+                <img src="assets/images/image7.jpg" alt="Image 7" class="rounded-lg shadow-lg">
+                <img src="assets/images/image3.jpg" alt="Image 3" class="rounded-lg shadow-lg">
+                <img src="assets/images/image13.jpg" alt="Image 13" class="rounded-lg shadow-lg">
+                <img src="assets/images/image11.jpg" alt="Image 11" class="rounded-lg shadow-lg">
+                <img src="assets/images/image17.jpg" alt="Image 14" class="rounded-lg shadow-lg">
+                <img src="assets/images/image12.jpg" alt="Image 12" class="rounded-lg shadow-lg">
+                <img src="assets/images/image9.jpeg" alt="Image 9" class="rounded-lg shadow-lg">
+                <img src="assets/images/image10.jpg" alt="Image 10" class="rounded-lg shadow-lg">
+                <img src="assets/images/image14.jpg" alt="Image 14" class="rounded-lg shadow-lg">
+                <img src="assets/images/image16.jpg" alt="Image 14" class="rounded-lg shadow-lg">
+                  
+
+                
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-400 text-sm">
+            <p>© 2024 Electro Tech Connect (ETC), Govt. Engineering College Ajmer</p>
+        </footer>
+    </div>
+</body>
+</html>
